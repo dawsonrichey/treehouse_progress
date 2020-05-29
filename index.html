@@ -21,18 +21,24 @@
 
 <body>
 <div class="container">
-<h1><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331813/treehouse.svg" alt="treehouse logo"/>Treehouse Progress</h1>
-<p><button id="updateMetrics">Update</button> <span  id="status">Updating...</span></p>  
+    <div class="row">
+    <div class="col"><h1><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331813/treehouse.svg" alt="treehouse logo"/>Treehouse Progress</h1></div>
+        <div class="col" style="background: #f7f7f7;"><p style="margin-top: 14px;"><button type="button" class="btn btn-dark" id="updateMetrics">Update</button> <span style="color:#000;" id="status">Updating...</span></p></div>
+    </div>
+
+
 </div>
     
 <div class="container">
     <div id="aboutUser" class="well">
         <div class="row">
-            <div id="gravatar" class="col-12">
+            <div id="gravatar" class="col-3">
             </div>
-            <div class="col-12">
+            <div class="col-9">
                 <p id="userName"></p>
                 <p id="totalPoints"></p>
+            </div>
+            <div class="col-12">
                 <div id="colorLine"></div>
             </div>
         </div>
@@ -53,30 +59,41 @@
 -->
     
 <div class="container">
-	<div id="buttonsContainer" >
+	<div id="buttonsContainer" class="row">
 		<div class="col-6 well">
-			<p>Sort:</p>
+        Sort:
 		<button type="button" class="btn btn-info">Newest</button>
 		<button type="button" class="btn btn-info">Oldest</button>
 			
 		</div>
 		<div class="col-6 well">
-			<p>Filter:</p>
+			Filter:
 		<button type="button" class="btn btn-info">All Day</button>
 		<button type="button" class="btn btn-info">AM</button>
 		<button type="button" class="btn btn-info">PM</button>
 		</div>
+<!--
 		<div id="sContainer" class="col-12 well">
-			<p>Skill:</p>
+			Skill:
 			<button type="button" class="btn btn-info">All Day</button>
 			<button type="button" class="btn btn-info">AM</button>
 			<button type="button" class="btn btn-info">PM</button>
 		</div>
+-->
 		<div id="resultsContainer" class="col-12 well">
-			<p>Results:</p>
-			<p>Badges Earned in morning:</p>
-			<p>Badges Earned at night:</p>
-			<p>Total badesges earned:</p>
+            			 <div class="row">
+                <div class="col"><p>Results:</p></div>
+                <div class="col"><p>Total badesges earned:</p></div>
+               
+                
+            </div>
+            <div class="row">
+                <div class="col"><p>Badges Earned:</p></div>
+                <div class="col"><p id="am_num" class="am" style="padding: 10px;border-radius: 10px;">Morning </p></div>
+                <div class="col"><p id="pm_num" class="pm" style="padding: 10px;border-radius: 10px;">Evening</p></div>
+            </div>
+
+			
 			
 		</div>
 		

@@ -86,7 +86,7 @@ $(document).ready(function() {
 						colorLine[skill] = Math.round(100*(points/totalPoints));
 						//Create a points box
 						pointsHTML += "<div class='col-sm-3 pointBox'>";
-						pointsHTML += "<div class='colorBar' style='background-color: " + langColors[skill] + "'></div>"
+//						pointsHTML += "<div class='colorBar' style='background-color: " + langColors[skill] + "'></div>"
 						pointsHTML += skill + "<br /><span class='points' style='background-color: " + langColors[skill] + "'>" + points + "</span>";
 						pointsHTML += "</div>";
 						//Check how many 'col-sm-3' elements in a row (Bootstrap row)
@@ -118,7 +118,7 @@ $(document).ready(function() {
 						//Add a color to the color line array
 						colorLine[skill] = Math.round(210*(points/totalPoints));
 						//Create a points box
-						pointHTML += "<div id='" + skill + "' class='col-sm-3 pointBox " + skill + "'>";
+						pointHTML += "<div id='" + skill + "' class='col-3 pointBox " + skill + "'>";
 						pointHTML += "<div class='colorBar' style='background-color: " + langColors[skill] + "'></div>"
 						pointHTML += skill + "<br /><span class='points' style='background-color: " + langColors[skill] + "'>" + points + "</span>";
 						pointHTML += "</div>";
@@ -163,17 +163,22 @@ $(document).ready(function() {
 				}
 				if(newDate < 12){
 					am += 1;
-					badgesHTML += "<p><img src='" + badge.icon_url + "' /> " 
-					+ badge.name + "<br /><span class='small am'>" 
-					+ badge.earned_date.substring(0,10) + "<br/>" 
-					+ badge.earned_date.substring(11,19) + "</span></p>";
+					badgesHTML += "<p class='am'><img src='" + badge.icon_url + "' /> " 
+//					+ badge.name 
+                    + "<span class='small am'>" 
+//					+ badge.earned_date.substring(0,10) + "<br/>" 
+//					+ badge.earned_date.substring(11,19) 
+                    + "</span></p>";
 				}
 				if(newDate >= 12){
 					pm += 1;
-					badgesHTML += "<p><img src='" + badge.icon_url + "' /> " 
-					+ badge.name + "<br /><span class='small pm'>" 
-					+ badge.earned_date.substring(0,10) + "<br/>" 
-					+ badge.earned_date.substring(11,19) + "</span></p>";
+//					badgesHTML += "<p class='pm'><img src='" + badge.icon_url + "' /> " 
+                    badgesHTML += "<p class='pm'><img src='" + badge.icon_url + "' /> " 
+//					+ badge.name 
+                    + "<span class='small pm'>" 
+//					+ badge.earned_date.substring(0,10) + "<br/>" 
+//					+ badge.earned_date.substring(11,19) 
+                    + "</span></p>";
 				}
 
 				e += 1;
