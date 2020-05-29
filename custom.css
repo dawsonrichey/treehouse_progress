@@ -1,2 +1,198 @@
 /* CSS Document */
 
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* span.small{display:none;} */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #F5F5F5;
+  font-family: Muli, sans-serif;
+  font-size: 16px;
+	color: #333;
+}
+
+h1 {
+	overflow: hidden;
+}
+
+h1 img {
+	width: 42px;
+	height: auto;
+	padding-right: 8px;
+}
+
+h1 small {
+	padding-left: 50px;
+}
+span.am{background-color: yellow;}
+span.pm{background-color: blue;}
+
+button, a, #badgeTimeline p {
+	-webkit-transition: all .15s linear;
+	 -moz-transition: all .15s linear;
+	-o-transition: all .15s linear;
+	transition: all .15s linear;
+}
+
+.well {
+	border: 2px solid #ccc;
+	background: #FBFBFB;
+}
+
+#colorLine {
+	width: 100%;
+	height: 30px;
+	text-align: center;
+}
+
+#badgeTimeline img {
+  display: block;
+  width: 50px;
+  height: auto;
+ margin: 0 auto;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	#colorLine {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.colorPiece {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-width: 768px) {
+	colorPiece {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+.points {
+    font-weight: 900;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 2px 25px;
+    border-radius: 5px;
+	margin-top:5px;
+}
+
+#status {
+	font-size: 0.8em;
+	color: #ccc;
+}
+
+#gravatar {
+	text-align: center;
+}
+
+#gravatar img {
+	padding: 2px;
+	width: 140px;
+	max-width: 70%;
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 50%;
+}
+
+#userName {
+	font-size: 1.5em;
+	overflow: hidden;
+	display:block;
+}
+
+#aboutUser p {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	#aboutUser p {
+		text-align: center;
+	}
+}
+
+#updateMetrics {
+	font-size: 0.8em;
+	padding: 1px 4px;
+	background: none;
+	border: 2px solid #ccc;
+	outline: none;
+	border-radius: 3px;
+}
+
+#updateMetrics:hover {
+	border-color: #20A749;
+}
+
+.pointBox {
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 10px 20px 20px 20px;
+	position: relative;
+}
+
+.pointBox .colorBar {
+	position: absolute;
+	width: 100%;
+	max-width: 100px;
+	height:8px;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	content: '';
+	border-radius: 3px;
+}
+
+#badgeTimeline {
+	overflow: auto;
+}
+
+#badgeTimeline img {
+	display: block;
+	width: 70px;
+	height: auto;
+text-align: left;
+}
+
+#badgeTimeline p {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	padding: 15px 46px 0 0;
+	margin: 0;
+	text-overflow: ellipsis;
+	height: 190px;
+}
+
+#badgeTimeline p:hover {
+	background-color: #eee;
+}
+
+@media (min-width: 768px) {
+	#badgeTimeline p {
+		width: 25%;
+	}
+}
