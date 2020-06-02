@@ -85,7 +85,7 @@ $(document).ready(function() {
 						//Add a color to the color line array
 						colorLine[skill] = Math.round(100*(points/totalPoints));
 						//Create a points box
-						pointsHTML += "<div class='col-sm-3 pointBox'>";
+						pointsHTML += "<div class='col-3 pointBox'>";
 //						pointsHTML += "<div class='colorBar' style='background-color: " + langColors[skill] + "'></div>"
 						pointsHTML += skill + "<br /><span class='points' style='background-color: " + langColors[skill] + "'>" + points + "</span>";
 						pointsHTML += "</div>";
@@ -161,8 +161,10 @@ $(document).ready(function() {
 
 					//	console.log(jQuery.type(newDate));
 				}
+                var morning_count = 0;
 				if(newDate < 12){
 					am += 1;
+                    morning_count += 1;
 					badgesHTML += "<p class='am'><img src='" + badge.icon_url + "' /> " 
 //					+ badge.name 
                     + "<span class='small am'>" 
@@ -170,8 +172,10 @@ $(document).ready(function() {
 //					+ badge.earned_date.substring(11,19) 
                     + "</span></p>";
 				}
+                var evening_count = 0;
 				if(newDate >= 12){
 					pm += 1;
+                    evening_count += 1;
 //					badgesHTML += "<p class='pm'><img src='" + badge.icon_url + "' /> " 
                     badgesHTML += "<p class='pm'><img src='" + badge.icon_url + "' /> " 
 //					+ badge.name 
@@ -191,6 +195,9 @@ $(document).ready(function() {
 			console.log(e);
 			console.log(am + " am");
 			console.log(pm + " pm");
+        document.getElementById("tot_num").innerText =  e;
+        document.getElementById("am_num").innerText =  am;
+        document.getElementById("pm_num").innerText=  pm;
 		});
 	}
 	
