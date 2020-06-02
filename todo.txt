@@ -1,10 +1,10 @@
 TO DO LIST
 --------------------
-[] Create hover text over badges
-[] Pull badge numbers into the results section
-[] Get colors for other skills
-[] Add filter funtions to time of day buttons
-[] Add input field to pull user from
-[] Add comments   
-[] Add sort by date function buttons
-[] Update Read Me file
+[ ] Create hover text over badges
+[X] Pull badge numbers into the results section
+[ ] Get colors for other skills
+[ ] Add filter funtions to time of day buttons
+[ ] Add input field to pull user from
+[ ] Add comments   
+[ ] Add sort by date function buttons
+[ ] Update Read Me file
