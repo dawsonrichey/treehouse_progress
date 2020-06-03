@@ -4,7 +4,6 @@
 // dylanmartin3
 // daikiitoh
 // azamatmurzabayev
-
 var user = 'dawson89',
 urlJSON = "https://teamtreehouse.com/" + user + ".json",
 langColors = {
