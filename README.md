@@ -19,18 +19,3 @@ Visualize data in a graph, chart, or other visual representation of data
 
 
 
-# MOVE TO PYTHON FILE
-# MOVE
-# MOVE CONTENT BELOW
-
-# day and night badges
--Visualize data in a graph, chart, or other visual representation of data
-
-# populate other user data based off input value
--Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event)
-
-# sd
--Create and call at least 3 functions, at least one of which must return a value that is used
-
-# Read Treehouse JSON file
--Read data from an external file, such as text, JSON, CSV, etc and use that data in your application

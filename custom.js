@@ -1,4 +1,5 @@
-// JavaScript Document
+//Auther Dawson Richey
+//Treehouse Profile Project
 
 // thesilkworm
 // dylanmartin3
@@ -7,16 +8,16 @@
 var user = 'dawson89',
 urlJSON = "https://teamtreehouse.com/" + user + ".json",
 langColors = {
-			"21st Century Skills": "#fff",
-			"Android": "#fff",
-			"Computer Science": "#fff",
-			"Data Analysis": "#fff",
-			"Digital Literacy": "#fff",
-			"Go": "#fff",
-			"Learning Resources": "#fff",
-			"Machine Learning": "#fff",
-			"Ruby": "#fff",
-			"Security": "#fff",
+			"21st Century Skills": "#000",
+			"Android": "#000",
+			"Computer Science": "#000",
+			"Data Analysis": "#000",
+			"Digital Literacy": "#000",
+			"Go": "#000",
+			"Learning Resources": "#000",
+			"Machine Learning": "#000",
+			"Ruby": "#000",
+			"Security": "#000",
 			"JavaScript": "#086788",
 			"CSS": "#06aed5",
 			"HTML": "#f0c808",

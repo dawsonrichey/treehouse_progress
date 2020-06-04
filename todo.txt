@@ -8,3 +8,4 @@ TO DO LIST
 [ ] Add comments   
 [ ] Add sort by date function buttons
 [ ] Update Read Me file
+[ ] Change background image
