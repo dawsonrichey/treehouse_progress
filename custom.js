@@ -1,13 +1,16 @@
-//Auther Dawson Richey
+//Author Dawson Richey
 //Treehouse Profile Project
 
-// thesilkworm
-// dylanmartin3
-// daikiitoh
-// azamatmurzabayev
-var user = 'dawson89',
-urlJSON = "https://teamtreehouse.com/" + user + ".json",
-langColors = {
+// sample user names
+    // thesilkworm
+    // dylanmartin3
+    // daikiitoh
+    // azamatmurzabayev
+
+
+var user = $( "#demo" ).val( );
+//var urlJSON = "https://teamtreehouse.com/" + user + ".json";
+var langColors = {
 			"21st Century Skills": "#000",
 			"Android": "#000",
 			"Computer Science": "#000",
@@ -27,22 +30,21 @@ langColors = {
 			"Databases": "#DD792C",
 			"C#": "#0366B2",
 			"Game Development": "#499DDD",
-			"Digital Literacy": "#c38cd4",
 			"Java": "#2c9676",
 			"Python": "#D30c6c ",
 			"Business": "#f9845b",
-			"Android": "#5cb860",
 			"iOS": "#53bbb4",
-			"Ruby": "#e15258",
 			"Design": "#59AD0F",
 			"APIs": "#000",
 			"Quality Assurance": "#a7a7a7"
-		},
+		};
 
-colorLine = {};
+var colorLine = {};
 
 //On a successful request, show the updated time
 $(document).ajaxSuccess(function( event, xhr, settings ) {
+    var user = $( "#demo" ).val( );
+    var urlJSON = "https://teamtreehouse.com/" + user + ".json";
   if ( settings.url == urlJSON ) {
 		var dt = new Date();
 		var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
@@ -52,13 +54,16 @@ $(document).ajaxSuccess(function( event, xhr, settings ) {
 
 //On an unsuccessful request, show an error
 $(document).ajaxError(function( event, xhr, settings ) {
+    var user = $( "#demo" ).val( );
+    var urlJSON = "https://teamtreehouse.com/" + user + ".json";
   if ( settings.url == urlJSON ) {
     $('#status').text('Data not found!');
   }
 });
 
-$(document).ready(function() {
-	
+$('#get-data').click(function() {
+    var user = $( "#demo" ).val( );
+	var urlJSON = "https://teamtreehouse.com/" + user + ".json";
 	//Make the request
 	function refreshMetrics(){
     $('#status').text('Updating...');
@@ -151,22 +156,22 @@ $(document).ready(function() {
 			$.each(data.badges, function (i, badge) {
 				
 				if(1 > 0){
-					// 	var date = new Date(badge.earned_date);
-					// console.log(date);
+					 	var date = new Date(badge.earned_date);
+					 console.log(date);
 					var dateObj = new Date(badge.earned_date); 
-					// var newDate = dateObj .getFullYear() + "-" + dateObj.getMonth() + "-" + dateObj.getDate() + "T" + dateObj.getHours() + ":" + dateObj.getMinutes() + ":" + dateObj.getSeconds() + "Z"; 
+//					 var newDate = dateObj .getFullYear() + "-" + dateObj.getMonth() + "-" + dateObj.getDate() + "T" + dateObj.getHours() + ":" + dateObj.getMinutes() + ":" + dateObj.getSeconds() + "Z"; 
 					var newDate = dateObj.getHours() ; 
+//console.log(badge.name);
 
+//					console.log(newDate);
 
-					console.log(newDate);
-
-					//	console.log(jQuery.type(newDate));
+//						console.log(jQuery.type(newDate));
 				}
                 var morning_count = 0;
 				if(newDate < 12){
 					am += 1;
                     morning_count += 1;
-					badgesHTML += "<p class='am'><img src='" + badge.icon_url + "' /> " 
+					badgesHTML += "<p class='am'><img src='" + badge.icon_url + "' alt='" + badge.name + "' title='" + badge.name + "' /> " 
 //					+ badge.name 
                     + "<span class='small am'>" 
 //					+ badge.earned_date.substring(0,10) + "<br/>" 

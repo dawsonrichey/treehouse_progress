@@ -1,16 +1,17 @@
 TO DO LIST
 --------------------
-[ ] Create AM, PM & All Day Button Filters
+[X] Create AM, PM & All Day Button Filters
+[ ] Add footer information
+[X] Add all badges count
 [ ] Create Newest and Oldest sort filters
-[ ] Add input field for username
-[ ] User input field pull new content in submit
+[X] Add input field for username
+[X] User input field pull new content in submit
 [ ] Build try catch into user input field
-[ ] Create hover text over badges
+[X] Create hover text over badges
 [X] Pull badge numbers into the results section
 [ ] Get colors for other skills
-[ ] Add filter funtions to time of day buttons
-[ ] Add input field to pull user from
+[X] Add filter funtions to time of day buttons
+[X] Add input field to pull user from
 [ ] Add comments   
-[ ] Add sort by date function buttons
-[ ] Update Read Me file
+[X] Update Read Me file
 [ ] Change background image
