@@ -22,31 +22,25 @@
 </head>
 
 <body>
-<p>Testing Area</p>
-<div class="container">
-    <p>Name: <input type="text" id="test" value="dawson89"></p>
 
-    
-    <br/>
-    <p></p>
-    <div id="demo">Enter Username Here:</div>
-    <input id="here" type="text" value="dawson89">
-    <button id="get-data">Get Data</button>
+<div class="container">
+    <div class="row" style="padding-top: 15px;">
+        <div class="col"><h1><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331813/treehouse.svg" alt="treehouse logo"/>Treehouse Progress</h1></div>
+        <div class="col" style="background: #f7f7f7;">
+            <div class="row">
+                <div class="col">
+                    <p style="margin-top: 14px;"><button type="button" class="btn btn-dark" id="updateMetrics">Update</button> <span style="color:#000;" id="status">Updating...</span></p>
+                </div>
+                <div class="col">
+                    <div id="demo">Enter Username Here:</div>
+                    <input id="here" type="text" value="dawson89">
+                    <button id="get-data">Get Data</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <script>
-//    $('#get-data').click(function () {
-//        var user = $("#test").val();
-//        $.getJSON('https://teamtreehouse.com/' + $("#test").val() + '.json', function(data) {
-//            console.log(data.points);
-//            var myJSON = JSON.stringify(data.points);
-//            document.getElementById("demo").innerHTML = myJSON;
-//        });
-//    });
-    </script>
-    
-    
-<p></p>
- 
-<script>
 $('#here')
   .keyup(function() {
     var value = $( this ).val();
@@ -56,16 +50,6 @@ $('#here')
   })
   .keyup();
 </script>
-</div>
-<div class="container">
-    <div class="row">
-    <div class="col"><h1><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331813/treehouse.svg" alt="treehouse logo"/>Treehouse Progress</h1></div>
-        <div class="col" style="background: #f7f7f7;"><p style="margin-top: 14px;"><button type="button" class="btn btn-dark" id="updateMetrics">Update</button> <span style="color:#000;" id="status">Updating...</span></p></div>
-  </div>
-
-
-</div>
-    
 <div class="container">
     <div id="aboutUser" class="well">
         <div class="row">
@@ -117,15 +101,17 @@ $('#here')
 			<button type="button" class="btn btn-info">PM</button>
 		</div>
 -->
-		<div id="resultsContainer" class="col-12 well">
-            			 <div class="row">
-                <div class="col"><p>Results:</p></div>
-                <div class="col"><p>Total badesges earned: <span id="tot_num"></span></p></div>
-               
-                
+            <div class="row" style="margin-top: 15px;">
+                <div class="col"><h3>Results:</h3></div>
+            
             </div>
-            <div class="row">
+        
+		<div id="resultsContainer" class="col-12 well">
+
+            <div class="row" style="margin-top: 15px;">
+                
                 <div class="col"><p>Badges Earned:</p></div>
+                <div class="col"><p>All: <span id="tot_num"></span></p></div>
                 <div class="col"><p class="am" style="padding: 10px;border-radius: 10px;">Morning: <span id="am_num"></span></p></div>
                 <div class="col"><p class="pm" style="padding: 10px;border-radius: 10px;">Evening: <span id="pm_num"></span></p></div>
             </div>
