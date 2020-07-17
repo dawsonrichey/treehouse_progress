@@ -26,19 +26,36 @@
 <div class="container">
     <p>Name: <input type="text" id="test" value="dawson89"></p>
 
-    <button id="get-data">Get Data</button>
+    
     <br/>
     <p></p>
-    <div id="demo">HERE</div>
+    <div id="demo">Enter Username Here:</div>
+    <input id="here" type="text" value="dawson89">
+    <button id="get-data">Get Data</button>
     <script>
-    $('#get-data').click(function () {
-        $.getJSON('https://teamtreehouse.com/' + $("#test").val() + '.json', function(data) {
-            console.log(data.points);
-            var myJSON = JSON.stringify(data.points);
-            document.getElementById("demo").innerHTML = myJSON;
-        });
-    });
+//    $('#get-data').click(function () {
+//        var user = $("#test").val();
+//        $.getJSON('https://teamtreehouse.com/' + $("#test").val() + '.json', function(data) {
+//            console.log(data.points);
+//            var myJSON = JSON.stringify(data.points);
+//            document.getElementById("demo").innerHTML = myJSON;
+//        });
+//    });
     </script>
+    
+    
+<p></p>
+ 
+<script>
+$('#here')
+  .keyup(function() {
+    var value = $( this ).val();
+    
+    $( "#demo" ).val( value );
+    
+  })
+  .keyup();
+</script>
 </div>
 <div class="container">
     <div class="row">
@@ -124,6 +141,6 @@
 
 	</div>
 </div>
-<script type="text/javascript" src="custom.js"></script>    
+<script type="text/javascript" src="custom-input.js"></script>    
 </body>
 </html>
