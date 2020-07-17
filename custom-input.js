@@ -156,22 +156,22 @@ $('#get-data').click(function() {
 			$.each(data.badges, function (i, badge) {
 				
 				if(1 > 0){
-					// 	var date = new Date(badge.earned_date);
-					// console.log(date);
+					 	var date = new Date(badge.earned_date);
+					 console.log(date);
 					var dateObj = new Date(badge.earned_date); 
-					// var newDate = dateObj .getFullYear() + "-" + dateObj.getMonth() + "-" + dateObj.getDate() + "T" + dateObj.getHours() + ":" + dateObj.getMinutes() + ":" + dateObj.getSeconds() + "Z"; 
+//					 var newDate = dateObj .getFullYear() + "-" + dateObj.getMonth() + "-" + dateObj.getDate() + "T" + dateObj.getHours() + ":" + dateObj.getMinutes() + ":" + dateObj.getSeconds() + "Z"; 
 					var newDate = dateObj.getHours() ; 
+console.log(badge.name);
 
+//					console.log(newDate);
 
-					console.log(newDate);
-
-					//	console.log(jQuery.type(newDate));
+//						console.log(jQuery.type(newDate));
 				}
                 var morning_count = 0;
 				if(newDate < 12){
 					am += 1;
                     morning_count += 1;
-					badgesHTML += "<p class='am'><img src='" + badge.icon_url + "' /> " 
+					badgesHTML += "<p class='am'><img src='" + badge.icon_url + "' alt='" + badge.name + "' title='" + badge.name + "' /> " 
 //					+ badge.name 
                     + "<span class='small am'>" 
 //					+ badge.earned_date.substring(0,10) + "<br/>" 
