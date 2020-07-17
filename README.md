@@ -1,5 +1,7 @@
 # treehouse_progress
 
+A live demo of this project can be found at http://dawsonsgeek.com/drichey/treehouse_progress/
+
 # Project Tasks
 
 Read and parse an external file (such as JSON or CSV) into your application and display some data from that in your app
