@@ -1,5 +1,10 @@
 TO DO LIST
 --------------------
+[ ] Create AM, PM & All Day Button Filters
+[ ] Create Newest and Oldest sort filters
+[ ] Add input field for username
+[ ] User input field pull new content in submit
+[ ] Build try catch into user input field
 [ ] Create hover text over badges
 [X] Pull badge numbers into the results section
 [ ] Get colors for other skills
