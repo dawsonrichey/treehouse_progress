@@ -1,6 +1,6 @@
-<!doctype html>
 <!-- Auther Dawson Richey -->
 <!--Treehouse Profile Project -->
+<!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -44,7 +44,9 @@
 $('#here')
   .keyup(function() {
     var value = $( this ).val();
+    
     $( "#demo" ).val( value );
+    
   })
   .keyup();
 </script>
@@ -69,7 +71,13 @@ $('#here')
 		
 	</div>
 </div>
-
+<!--
+<div class="container">
+	<div id="pointContainer" class="well">
+		
+	</div>
+</div>
+-->
     
 <div class="container">
 	<div id="buttonsContainer" class="row">
@@ -85,19 +93,31 @@ $('#here')
 		<button type="button" class="btn btn-info btn-am" style="background-color: #fac527;">AM</button>
 		<button type="button" class="btn btn-info btn-pm" style="background-color: #499af0;">PM</button>
 		</div>
-
+<!--
+		<div id="sContainer" class="col-12 well">
+			Skill:
+			<button type="button" class="btn btn-info">All Day</button>
+			<button type="button" class="btn btn-info">AM</button>
+			<button type="button" class="btn btn-info">PM</button>
+		</div>
+-->
             <div class="row" style="margin-top: 15px;">
                 <div class="col"><h3>Results:</h3></div>
+            
             </div>
         
 		<div id="resultsContainer" class="col-12 well">
+
             <div class="row" style="margin-top: 15px;">
+                
                 <div class="col"><p>Badges Earned:</p></div>
-                <div class="col"><p style="padding: 10px;border-radius: 10px;">All: <span id="tot_num"></span></p></div>
+                <div class="col"><p>All: <span id="tot_num"></span></p></div>
                 <div class="col"><p class="am" style="padding: 10px;border-radius: 10px;">Morning: <span id="am_num"></span></p></div>
                 <div class="col"><p class="pm" style="padding: 10px;border-radius: 10px;">Evening: <span id="pm_num"></span></p></div>
             </div>
-	
+
+			
+			
 		</div>
 		
 		</div>

@@ -12,6 +12,7 @@ TO DO LIST
 [ ] Get colors for other skills
 [X] Add filter funtions to time of day buttons
 [X] Add input field to pull user from
-[ ] Add comments   
+[ ] Add better comments   
 [X] Update Read Me file
 [ ] Change background image
+[X] Set my data as the default data for the page

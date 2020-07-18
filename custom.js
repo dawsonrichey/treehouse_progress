@@ -1,14 +1,14 @@
-//Author Dawson Richey
+//Auther Dawson Richey
 //Treehouse Profile Project
 
-// sample user names
-    // thesilkworm
-    // dylanmartin3
-    // daikiitoh
-    // azamatmurzabayev
+// thesilkworm
+// dylanmartin3
+// daikiitoh
+// azamatmurzabayev
+//var user = $("#test").val(); 
 
 
-var user = $( "#demo" ).val( );
+//var user = $( "#demo" ).val( );
 //var urlJSON = "https://teamtreehouse.com/" + user + ".json";
 var langColors = {
 			"21st Century Skills": "#000",
@@ -43,6 +43,7 @@ var colorLine = {};
 
 //On a successful request, show the updated time
 $(document).ajaxSuccess(function( event, xhr, settings ) {
+
     var user = $( "#demo" ).val( );
     var urlJSON = "https://teamtreehouse.com/" + user + ".json";
   if ( settings.url == urlJSON ) {

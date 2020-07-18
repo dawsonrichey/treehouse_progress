@@ -17,3 +17,8 @@ $(document).ready(function(){
 
 
 // Sort Newest/Oldest button filters
+
+
+
+// This will triggar the page to fill with my data as the default
+document.getElementById("get-data").click();
