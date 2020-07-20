@@ -6,7 +6,6 @@ TO DO LIST
 [ ] Create Newest and Oldest sort filters
 [X] Add input field for username
 [X] User input field pull new content in submit
-[ ] Build try catch into user input field
 [X] Create hover text over badges
 [X] Pull badge numbers into the results section
 [ ] Get colors for other skills
@@ -16,3 +15,6 @@ TO DO LIST
 [X] Update Read Me file
 [ ] Change background image
 [X] Set my data as the default data for the page
+[ ] Format Updated time format
+[ ] restyle header input fields
+[ ] change button colors

@@ -1,3 +1,7 @@
+# Project Description
+
+This project displays treehouse user profile data. 
+
 # treehouse_progress
 
 A live demo of this project can be found at http://dawsonsgeek.com/drichey/treehouse_progress/
