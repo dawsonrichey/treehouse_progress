@@ -29,12 +29,12 @@
         <div class="col" style="background: #f7f7f7;">
             <div class="row">
                 <div class="col">
-                    <p style="margin-top: 14px;"><button type="button" class="btn btn-dark" id="updateMetrics">Update</button> <span style="color:#000;" id="status">Updating...</span></p>
+                    <p style="margin-top: 14px;"><button type="button" class="btn btn-dark" style="display:none;" id="updateMetrics">Update</button> <span style="color:#000;" id="status">Updating...</span></p>
                 </div>
                 <div class="col">
                     <div id="demo">Enter Username Here:</div>
                     <input id="here" type="text" value="dawson89">
-                    <button id="get-data">Get Data</button>
+                    <button type="button" class="btn btn-info btn-all" id="get-data">Get Data</button>
                 </div>
             </div>
         </div>
@@ -71,14 +71,7 @@ $('#here')
 		
 	</div>
 </div>
-<!--
-<div class="container">
-	<div id="pointContainer" class="well">
-		
-	</div>
-</div>
--->
-    
+
 <div class="container">
 	<div id="buttonsContainer" class="row">
 		<div class="col-6 well">
@@ -93,14 +86,7 @@ $('#here')
 		<button type="button" class="btn btn-info btn-am" style="background-color: #fac527;">AM</button>
 		<button type="button" class="btn btn-info btn-pm" style="background-color: #499af0;">PM</button>
 		</div>
-<!--
-		<div id="sContainer" class="col-12 well">
-			Skill:
-			<button type="button" class="btn btn-info">All Day</button>
-			<button type="button" class="btn btn-info">AM</button>
-			<button type="button" class="btn btn-info">PM</button>
-		</div>
--->
+
             <div class="row" style="margin-top: 15px;">
                 <div class="col"><h3>Results:</h3></div>
             
@@ -111,7 +97,7 @@ $('#here')
             <div class="row" style="margin-top: 15px;">
                 
                 <div class="col"><p>Badges Earned:</p></div>
-                <div class="col"><p>All: <span id="tot_num"></span></p></div>
+                <div class="col"><p style="background-color: black; color: white; padding: 10px;border-radius: 10px;">All: <span id="tot_num"></span></p></div>
                 <div class="col"><p class="am" style="padding: 10px;border-radius: 10px;">Morning: <span id="am_num"></span></p></div>
                 <div class="col"><p class="pm" style="padding: 10px;border-radius: 10px;">Evening: <span id="pm_num"></span></p></div>
             </div>
