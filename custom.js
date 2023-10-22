@@ -56,7 +56,7 @@ $(document).ajaxSuccess(function( event, xhr, settings ) {
 //On an unsuccessful request, show an error
 $(document).ajaxError(function( event, xhr, settings ) {
     var user = $( "#demo" ).val( );
-    var urlJSON = "https://teamtreehouse.com/" + user + ".json";
+    var urlJSON = "https://dawsons-geek.com/" + user + ".json";
   if ( settings.url == urlJSON ) {
     $('#status').text('Data not found!');
   }
@@ -64,7 +64,7 @@ $(document).ajaxError(function( event, xhr, settings ) {
 
 $('#get-data').click(function() {
     var user = $( "#demo" ).val( );
-	var urlJSON = "https://teamtreehouse.com/" + user + ".json";
+	var urlJSON = "https://dawsons-geek.com/" + user + ".json";
 	//Make the request
 	function refreshMetrics(){
     $('#status').text('Updating...');
