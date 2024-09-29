@@ -8,8 +8,8 @@
 //var user = $("#test").val(); 
 
 
-//var user = $( "#demo" ).val( );
-//var urlJSON = "https://teamtreehouse.com/" + user + ".json";
+// var user = $( "#demo" ).val( );
+// var urlJSON = "https://teamtreehouse.com/" + user + ".json";
 var langColors = {
 			"21st Century Skills": "#000",
 			"Android": "#000",
@@ -45,18 +45,22 @@ var colorLine = {};
 $(document).ajaxSuccess(function( event, xhr, settings ) {
 
     var user = $( "#demo" ).val( );
-    var urlJSON = "https://teamtreehouse.com/" + user + ".json";
+	// else{
+    var urlJSON = "https://teamtreehouse.com/profiles/" + user + ".json";
+	// var urlJSON = "https://dawsons-geek.com/" + user + ".json";
   if ( settings.url == urlJSON ) {
 		var dt = new Date();
 		var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
     $('#status').text('Updated at ' + time);
   }
+// }
 });
 
 //On an unsuccessful request, show an error
 $(document).ajaxError(function( event, xhr, settings ) {
     var user = $( "#demo" ).val( );
-    var urlJSON = "https://dawsons-geek.com/" + user + ".json";
+    // var urlJSON = "https://dawsons-geek.com/" + user + ".json";
+	var urlJSON = "https://teamtreehouse.com/profiles/" + user + ".json";
   if ( settings.url == urlJSON ) {
     $('#status').text('Data not found!');
   }
@@ -64,7 +68,14 @@ $(document).ajaxError(function( event, xhr, settings ) {
 
 $('#get-data').click(function() {
     var user = $( "#demo" ).val( );
-	var urlJSON = "https://dawsons-geek.com/" + user + ".json";
+	if(user == "dawson"){
+		// var urlJSON = "https://teamtreehouse.com/profiles/" + user + ".json";
+		var urlJSON = "https://dawsons-geek.com/" + user + ".json";
+	} else{
+		var urlJSON = "https://teamtreehouse.com/profiles/" + user + ".json";
+	}
+	// var urlJSON = "https://dawsons-geek.com/" + user + ".json";
+	// var urlJSON = "https://teamtreehouse.com/profiles/" + user + ".json";
 	//Make the request
 	function refreshMetrics(){
     $('#status').text('Updating...');
